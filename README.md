@@ -4,18 +4,6 @@ Projeto acadêmico do Grupo 03 Vila Nova, Tecnologia em Sistemas para Internet (
 
 **AVISO: PROTÓTIPO ACADÊMICO. NÃO CONECTADO À UBAS. NÃO USAR COM DADOS REAIS DE PACIENTES.** Não é sistema de produção ou plataforma médica homologada. Os horários são fictícios, e a lista de atendimentos é demonstrativa. A fila é atualizada pelo painel com consultas periódicas de 12 segundos (não é push real-time). Notificações são internas e vistas quando o app está aberto (não são push, SMS ou WhatsApp). A estimativa de espera é um número ilustrativo, não uma previsão clínica.
 
-## Executar localmente
-
-Requer Python 3.9 ou superior. Não possui dependências externas.
-
-```bash
-export ADMIN_EMAIL="equipe@exemplo.test"
-export ADMIN_PASSWORD="TroqueEstaSenhaForte123!"
-python server.py
-```
-
-Abra http://127.0.0.1:8080. No Windows PowerShell, substitua `export VAR=...` por `$env:VAR="..."` e use `py server.py`.
-
 - **Paciente:** faça um cadastro demonstrativo com CPF válido *fictício* e e-mail fictício. Selecione vaga em **Agendar**.
 - **Equipe:** entre com e-mail e senha configurados via variáveis de ambiente. Abra **Painel da UBAS** para chamar/concluir atendimento ou marcar ausência.
 - Os dados são mantidos no arquivo local `vila.sqlite3`, criado automaticamente e **ignorado pelo Git**.
