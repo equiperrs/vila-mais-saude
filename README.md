@@ -30,14 +30,4 @@ Abra http://127.0.0.1:8080. No Windows PowerShell, substitua `export VAR=...` po
 - `tests/test_api.py`: teste de fluxo local.
 - `.gitignore`: evita publicar banco, segredos e caches.
 
-## Antes de qualquer produção
-
-Necessário: aprovação da gestão da UBAS, avaliação de segurança e LGPD, autorização e base legal para tratamento de dados pessoais de saúde; HTTPS obrigatório, configuração `COOKIE_SECURE=1`, monitoramento, rate limiting persistente, rotinas de backup seguro e recuperação, autenticação/autorização reforçadas, reset de senha, proteção CSRF robusta, auditoria de acesso, política de retenção, consentimentos/avisos adequados, verificação de identidade, regras oficiais de vagas e prioridades, ajustes para acessibilidade e testes de carga. Mudar `HOST=0.0.0.0` **não torna este protótipo apto para produção**.
-
-## Publicação
-
-Suba estes arquivos em um **novo repositório privado** do GitHub. O GitHub Pages não executa o backend Python/SQLite. Para demonstrar online de forma protegida, configure um serviço de aplicação com Python e armazenamento persistente ou adapte para um banco gerenciado. Não publique em acesso aberto enquanto não forem implementados os requisitos de segurança e proteção de dados.
-
-## Origem do escopo
-
-Documento `Grupo 03 - Vila Nova.docx`: páginas 3–5 (objetivo e escopo), páginas 7–8 (RF/RNF), páginas 10–15 (modelagem, banco e protótipo). O demonstrador implementa os fluxos centrais, sem consultas clínicas, prontuários, diagnóstico, prescrição, pagamentos ou integração com sistemas públicos.
+prontuários, diagnóstico, prescrição, pagamentos ou integração com sistemas públicos.
